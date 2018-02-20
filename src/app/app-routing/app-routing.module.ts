@@ -3,15 +3,17 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from '../home/home.component';
+import { RevestimientosComponent } from '../revestimientos/revestimientos.component';
 import { CielorrasoComponent } from '../cielorraso/cielorraso.component';
-import { NavbarComponent } from '../navbar/navbar.component';
-
+import { ContactoComponent } from '../contacto/contacto.component';
 
 const routes: Routes = [
-
+  //ruta para redireccionar (a home) cuando se entra a la raíz del proyecto:
+  { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
-  { path: 'navbar', component: NavbarComponent},
-  { path: 'cielorraso', component: CielorrasoComponent}
+  { path: 'revestimientos', component: RevestimientosComponent},
+  { path: 'cielorraso', component: CielorrasoComponent},
+  { path: 'contacto', component: ContactoComponent}
   
   ];
 

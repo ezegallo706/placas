@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CielorrascoComponent } from './cielorrasco/cielorrasco.component';
+import { CielorrasoComponent } from './cielorraso/cielorraso.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CielorrascoComponent,
+    CielorrasoComponent,
     NavbarComponent
   ],
   imports: [

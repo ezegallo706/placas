@@ -12,6 +12,7 @@ import { RevestimientosComponent } from './revestimientos/revestimientos.compone
 import { CielorrasoComponent } from './cielorraso/cielorraso.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent,
     CielorrasoComponent,
     ContactoComponent,
-    RevestimientosComponent
+    RevestimientosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

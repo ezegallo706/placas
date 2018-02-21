@@ -1,23 +1,40 @@
-<div class="row">
-  <div class="col">
-    <div ngbDropdown class="d-inline-block">
-      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button class="dropdown-item">Action - 1</button>
-        <button class="dropdown-item">Another Action</button>
-        <button class="dropdown-item">Something else is here</button>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:rgba(0, 0, 0, 0.25);">
+  <img src='http://seca.com.ar/imagenes/logo.jpg' class="img-logo"> 
+<div class="container mr-0">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+    <div  id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link pointer">Home</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link">
+              <div ngbDropdown>
+                <a id="dropdownBasic1"  class="pointer" ngbDropdownToggle>Toggle dropdown</a>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button class="dropdown-item">Action - 1</button>
+                  <button class="dropdown-item">Another Action</button>
+                  <button class="dropdown-item">Something else is here</button>
+                </div>
+              </div>
+            </a>     
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+             <div ngbDropdown>
+               <a id="dropdownBasic2" class="pointer" ngbDropdownToggle>CieloRrasos</a>
+               <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                 <button class="dropdown-item">Action - 1</button>
+               </div>
+             </div>
+           </a>     
+       </li>
+        <li class="nav-item">
+          <a class="nav-link pointer">Contacto</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <div class="col text-right">
-    <div ngbDropdown placement="top-right" class="d-inline-block">
-      <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Toggle dropup</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-        <button class="dropdown-item">Action - 1</button>
-        <button class="dropdown-item">Another Action</button>
-        <button class="dropdown-item">Something else is here</button>
-      </div>
-    </div>
-  </div>
-</div>
+

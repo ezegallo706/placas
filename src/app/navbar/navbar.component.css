@@ -1,0 +1,15 @@
+.img-logo{
+    margin-top: 5%;
+    margin-left: 0%; 
+    width: 180px;
+     position:fixed;
+}
+nav{
+    font-size:16px!important;
+}
+.nav-link{
+    color:white!important;
+}
+.pointer{
+    cursor: pointer;
+}

@@ -1,25 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 import { AppComponent } from './app.component';
+
 import { HomeComponent } from './home/home.component';
-import { CielorrascoComponent } from './cielorrasco/cielorrasco.component';
+import { RevestimientosComponent } from './revestimientos/revestimientos.component';
+import { CielorrasoComponent } from './cielorraso/cielorraso.component';
+import { ContactoComponent } from './contacto/contacto.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CielorrascoComponent,
-    NavbarComponent
+    NavbarComponent,
+    CielorrasoComponent,
+    ContactoComponent,
+    RevestimientosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot ()
+    CarouselModule.forRoot(),
+    NgbModule.forRoot (),
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

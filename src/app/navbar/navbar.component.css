@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .img-logo{
     margin-top: 5%;
     margin-left: 0%; 
@@ -12,4 +13,9 @@ nav{
 }
 .pointer{
     cursor: pointer;
+=======
+nav{
+    height: 49px;
+    background-color: #343a40!important;
+>>>>>>> ae7452875b938b12ad14e3b095132113951b49ba
 }

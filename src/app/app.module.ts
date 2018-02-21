@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
 
+// CarouselModule.forRoot(),
 
 import { AppComponent } from './app.component';
 
@@ -27,7 +28,6 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    CarouselModule.forRoot(),
     NgbModule.forRoot (),
     AppRoutingModule
   ],

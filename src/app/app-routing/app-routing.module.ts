@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from '../home/home.component';
 import { RevestimientosComponent } from '../revestimientos/revestimientos.component';
-import { CielorrasoComponent } from '../cielorraso/cielorraso.component';
+import { CieloRrasoComponent } from '../cielorraso/cielorraso.component';
 import { ContactoComponent } from '../contacto/contacto.component';
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'revestimientos', component: RevestimientosComponent},
-  { path: 'cielorraso', component: CielorrasoComponent},
+  { path: 'cielorraso', component: CieloRrasoComponent},
   { path: 'contacto', component: ContactoComponent}
   
   ];

@@ -10,7 +10,7 @@
         <li class="nav-item">
            <a class="nav-link">
               <div ngbDropdown>
-                <a id="dropdownBasic1"  class="pointer" ngbDropdownToggle>Toggle dropdown</a>
+                <a id="dropdownBasic1"  class="pointer" ngbDropdownToggle>Revestimientos</a>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                   <button class="dropdown-item">Action - 1</button>
                   <button class="dropdown-item">Another Action</button>
@@ -24,8 +24,8 @@
              <div ngbDropdown>
                <a id="dropdownBasic2" class="pointer" ngbDropdownToggle>CieloRrasos</a>
                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-                 <button class="dropdown-item">Action - 1</button>
-               </div>
+                  <button *ngFor="let cielo of JsonProductos" class="dropdown-item pointer">{{cielo.nombre}}</button>
+              </div>
              </div>
            </a>     
        </li>

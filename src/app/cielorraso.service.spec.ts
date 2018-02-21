@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { CielorrasoService } from './cielorraso.service';
+import { CieloRrasoService } from './cielorraso.service';
 
 describe('CielorrasoService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [CielorrasoService]
+      providers: [CieloRrasoService]
     });
   });
 
-  it('should be created', inject([CielorrasoService], (service: CielorrasoService) => {
+  it('should be created', inject([CieloRrasoService], (service: CieloRrasoService) => {
     expect(service).toBeTruthy();
   }));
 });

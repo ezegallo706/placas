@@ -19,9 +19,16 @@
                                         <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
                                     </ng-template>
                         </div>
-                        <div class="col-6">
-                            <img src="{{cielo.imagen}}" style="max-width:75%">
-                        </div>
+                        <span *ngIf="!variable;else othar_content">
+                                <div class="col-6">
+                                        <img src="{{cielo.imagen}}" style="max-width:200%">
+                                    </div>
+                                </span>
+                        <ng-template #othar_content>
+                                <div class="col-6">
+                                <img src="{{toto.imagen}}" style="max-width:100%">
+                            </div>
+                            </ng-template>
 						</div>
 				</div>
 			</div>

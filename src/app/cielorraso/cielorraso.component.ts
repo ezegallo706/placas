@@ -37,7 +37,6 @@ export class CieloRrasoComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.variable);
     this.getCieloJsonId();
     
   }

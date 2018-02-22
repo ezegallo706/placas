@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:rgba(0, 0, 0, 0.25);">
+  <img src='http://seca.com.ar/assets/images/logo.jpg' class="img-logo"> 
+<div class="container mr-0">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+    <div  id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto " routerLinkActive="active">
+        <li class="nav-item">
+          <a class="nav-link pointer" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link">
+              <div ngbDropdown>
+                <a id="dropdownBasic1"  class="pointer" ngbDropdownToggle>Revestimientos</a>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button class="dropdown-item">Action - 1</button>
+                  <button class="dropdown-item">Another Action</button>
+                  <button class="dropdown-item">Something else is here</button>
+                </div>
+              </div>
+            </a>     
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+             <div ngbDropdown>
+               <a id="dropdownBasic2" class="pointer" ngbDropdownToggle>CieloRrasos</a>
+               <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <button *ngFor="let cielo of JsonProductos" class="dropdown-item pointer" routerLink="/cielorrasos/{{cielo.id}}" (click)="toto(cielo.id);">{{cielo.nombre}}</button>
+              </div>
+             </div>
+           </a>     
+       </li>
+        <li class="nav-item">
+          <a class="nav-link pointer" routerLink="/formulario">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

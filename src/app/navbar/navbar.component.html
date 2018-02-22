@@ -3,7 +3,7 @@
 <div class="container mr-0">
     <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
     <div  id="navbarResponsive">
-      <ul class="navbar-nav text-uppercase ml-auto">
+      <ul class="navbar-nav text-uppercase ml-auto " routerLinkActive="active">
         <li class="nav-item">
           <a class="nav-link pointer">Home</a>
         </li>
@@ -24,7 +24,7 @@
              <div ngbDropdown>
                <a id="dropdownBasic2" class="pointer" ngbDropdownToggle>CieloRrasos</a>
                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-                  <button *ngFor="let cielo of JsonProductos" class="dropdown-item pointer">{{cielo.nombre}}</button>
+                  <button *ngFor="let cielo of JsonProductos" class="dropdown-item pointer" routerLink="/cielorrasos/{{cielo.id}}" (click)="toto(cielo.id);">{{cielo.nombre}}</button>
               </div>
              </div>
            </a>     

@@ -14,4 +14,8 @@ export class CieloRrasoService {
   getCieloJsonId(id : number){
     return of(JsonRraso.find(cielo => cielo.id === id));
   }
+  getID(id : number){
+    return of(JsonRraso.find(cielo => cielo.id === id));
+  }
+
 }

@@ -23,12 +23,8 @@ import { FormularioComponent } from './formulario/formulario.component'
     ContactoComponent,
     RevestimientosComponent,
     FooterComponent,
-<<<<<<< HEAD
     CielorrasoDetalleComponent,
     FormularioComponent
-=======
-    CielorrasoDetalleComponent
->>>>>>> 2425ff0841c6193fb09e29c105c582456426c662
   ],
   imports: [
     BrowserModule,

@@ -27,10 +27,7 @@
     "jquery": "^3.3.1",
     "ngx-bootstrap": "^2.0.2",
     "rxjs": "^5.5.6",
-<<<<<<< HEAD
     "tether": "^1.4.3",
-=======
->>>>>>> 2425ff0841c6193fb09e29c105c582456426c662
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

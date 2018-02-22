@@ -10,13 +10,14 @@
 				<div class="intro-text pt-5">
 					<div class="row pt-5 text-white">
 						<div class="offset-1  col-5 text-center">
-                            <span *ngIf="1">
-                            <h2 class="display-3 text-center" >{{cielo.nombre}}</h2>
-                            <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
-                            </span>
-                            <p *ngIf="0">
-                                {{toto.nombre}}
-                            </p>
+                                    <div *ngIf="!variable;else other_content">
+                                            <h2 class="display-3 text-center" >{{cielo.nombre}}</h2>
+                                            <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
+                                    </div>
+                                    <ng-template #other_content>
+                                        <h2 class="display-3 text-center" >{{toto.nombre}}</h2>
+                                        <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
+                                    </ng-template>
                         </div>
                         <div class="col-6">
                             <img src="{{cielo.imagen}}" style="max-width:75%">

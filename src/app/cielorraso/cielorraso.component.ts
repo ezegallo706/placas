@@ -15,31 +15,29 @@ export class CieloRrasoComponent implements OnInit {
 
   @Input() cielo: CieloRraso;
   @Input() toto: CieloRraso;
-  caca: boolean;
+  variable: boolean;
   // JsonProductos : CieloRraso[];
   constructor(
     private route: ActivatedRoute,
     private location:Location,
     private cieloService:CieloRrasoService,
-  ) { }
+  ) { 
+    this.variable; 
+  }
 
   
   
   onClick(ide : number){
-   console.log(ide);
-   CieloRrasoService.prototype.getID(ide).subscribe(cielo => this.toto = cielo);
+    this.variable = true;
+    CieloRrasoService.prototype.getID(ide).subscribe(cielo => this.toto = cielo);
     console.log(this.toto);
-    if(this.toto!=undefined){
-    this.caca = false;
-    this.cielo=undefined;
-      console.log(this.cielo);
-    }
+    console.log(this.variable);
   }
 
 
 
   ngOnInit() {
-    console.log(this.caca);
+    console.log(this.variable);
     this.getCieloJsonId();
     
   }

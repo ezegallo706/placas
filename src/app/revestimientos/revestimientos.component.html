@@ -1,3 +1,38 @@
-<p>
-  revestimientos works!
-</p>
+<app-navbar></app-navbar>
+<section style="height:90vh; background-image:url('http://seca.com.ar/imagenes/fondo.jpeg');background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+<div style="background: linear-gradient(135deg, rgba(0, 2, 103, 0.78) -50%, rgba(61, 1, 1, 0.9) 100%); height:90vh">
+    <div class="container vhs pt-5">
+				<div class="intro-text pt-5">
+					<div class="row pt-5 text-white">
+						<div class="offset-1  col-5 text-center">
+                                    <div *ngIf="!variable;else other_content">
+                                            <h2 class="display-3 text-center" >{{primero.nombre}}</h2>
+                                            <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
+                                    </div>
+                                    <ng-template #other_content>
+                                        <h2 class="display-3 text-center" >{{segundo.nombre}}</h2>
+                                        <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
+                                    </ng-template>
+                        </div>
+                        <span *ngIf="!variable;else othar_content">
+                                <div class="col-6">
+                                        <img src="{{primero.imagen}}" style="max-width:200%">
+                                    </div>
+                                </span>
+                        <ng-template #othar_content>
+                                <div class="col-6">
+                                <img src="{{segundo.imagen}}" style="max-width:100%">
+                            </div>
+                            </ng-template>
+						</div>
+				</div>
+			</div>
+</div>
+
+</section>
+<app-footer></app-footer>

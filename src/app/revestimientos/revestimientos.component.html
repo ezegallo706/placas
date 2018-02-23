@@ -10,7 +10,7 @@
 				<div class="intro-text pt-5">
 					<div class="row pt-5 text-white">
 						<div class="offset-1  col-5 text-center">
-                                    <div *ngIf="!variable;else other_content">
+                                    <div *ngIf="!boleano;else other_content">
                                             <h2 class="display-3 text-center" >{{primero.nombre}}</h2>
                                             <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
                                     </div>
@@ -19,11 +19,11 @@
                                         <p>Humo asdapd asdaskkk eeoorn sdkalvcx asreras.</p>
                                     </ng-template>
                         </div>
-                        <span *ngIf="!variable;else othar_content">
-                                <div class="col-6">
-                                        <img src="{{primero.imagen}}" style="max-width:200%">
+                   
+                                <div class="col-6" *ngIf="!boleano;else othar_content">
+                                        <img src="{{primero.imagen}}" style="max-width:70%">
                                     </div>
-                                </span>
+                            
                         <ng-template #othar_content>
                                 <div class="col-6">
                                 <img src="{{segundo.imagen}}" style="max-width:100%">

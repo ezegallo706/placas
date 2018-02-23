@@ -7,15 +7,14 @@ import { RevestimientosComponent } from '../revestimientos/revestimientos.compon
 import { CieloRrasoComponent } from '../cielorraso/cielorraso.component';
 import { ContactoComponent } from '../contacto/contacto.component';
 import {FormularioComponent} from '../formulario/formulario.component';
+
 const routes: Routes = [
   //ruta para redireccionar (a home) cuando se entra a la raíz del proyecto:
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'cielorrasos/:id', component: CieloRrasoComponent},
   { path: 'home', component: HomeComponent},
   { path: 'revestimientos/:id', component: RevestimientosComponent},
-  { path: 'cielorraso', component: CieloRrasoComponent},
-  { path: 'formulario', component: FormularioComponent},
-  { path: 'revestimiento', component: RevestimientosComponent}
+  { path: 'formulario', component: FormularioComponent}
   ];
 
 @NgModule({

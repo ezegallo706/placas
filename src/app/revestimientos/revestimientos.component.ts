@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Revestimiento} from './revestimiento';
+import { Revestimiento } from './revestimiento';
 import { RevestimientoService } from '../revestimiento.service';
 //preguntar si estos hay que hacer algo mas
 import { ActivatedRoute } from '@angular/router';
@@ -16,11 +16,10 @@ export class RevestimientosComponent implements OnInit {
   @Input() primero: Revestimiento;
   @Input() segundo: Revestimiento;
   boleano: boolean;
-
-  constructor(
-    private route: ActivatedRoute,
-    private location:Location,
-    private revestimientoService:RevestimientoService
+  mati = "hola";
+   constructor(
+    private routex: ActivatedRoute,
+    private locationx: Location
   ) { }
 
   onClick(ide : number){
@@ -32,7 +31,8 @@ export class RevestimientosComponent implements OnInit {
       this.primero=undefined;
         console.log(this.primero);
     }
-  }
+  }  
+  
 
   ngOnInit() {
     console.log(this.boleano);
@@ -40,8 +40,9 @@ export class RevestimientosComponent implements OnInit {
   }
 
   getRevestimientoJsonID():void{
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.revestimientoService.getRevestimientoJsonID(id)
+    const id = +this.routex.snapshot.paramMap.get('id');
+    RevestimientoService.prototype.getRevestimientoJsonID(id)
     .subscribe(primero => this.primero = primero);
+    console.log(id);
   }
 }

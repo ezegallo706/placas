@@ -30,15 +30,12 @@ export class CieloRrasoComponent implements OnInit {
   onClick(ide : number){
     this.variable = true;
     CieloRrasoService.prototype.getID(ide).subscribe(cielo => this.toto = cielo);
-    console.log(this.toto);
-    console.log(this.variable);
   }
 
 
 
   ngOnInit() {
     this.getCieloJsonId();
-    
   }
    
    getCieloJsonId(): void {

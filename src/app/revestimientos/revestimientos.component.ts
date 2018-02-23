@@ -22,15 +22,9 @@ export class RevestimientosComponent implements OnInit {
     private locationx: Location
   ) { }
 
-  onClick(ide : number){
-    console.log(ide);
-    RevestimientoService.prototype.getID(ide).subscribe(primero => this.segundo = primero);
-    console.log(this.segundo);
-    if(this.segundo!=undefined){
-      this.boleano=false;
-      this.primero=undefined;
-        console.log(this.primero);
-    }
+  onMati(ide : number){
+    this.boleano = true;
+    RevestimientoService.prototype.getID(ide).subscribe(cielo => this.segundo = cielo);
   }  
   
 

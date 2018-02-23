@@ -12,9 +12,7 @@
               <div ngbDropdown>
                 <a id="dropdownBasic1"  class="pointer" ngbDropdownToggle>Revestimientos</a>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                  <button class="dropdown-item">Action - 1</button>
-                  <button class="dropdown-item">Another Action</button>
-                  <button class="dropdown-item">Something else is here</button>
+                    <button *ngFor="let reve of JsonReves" class="dropdown-item pointer" routerLink="/revestimientos/{{reve.id}}" (click)="mati(reve.id);">{{reve.nombre}}</button>
                 </div>
               </div>
             </a>     

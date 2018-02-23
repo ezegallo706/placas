@@ -14,13 +14,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'revestimientos/:id', component: RevestimientosComponent},
   { path: 'cielorraso', component: CieloRrasoComponent},
-<<<<<<< HEAD
-  { path: 'revestimiento', component:RevestimientosComponent},
-  { path: 'contacto', component: ContactoComponent}
-=======
-  { path: 'formulario', component: FormularioComponent}
->>>>>>> 65a8e9385112f93a652208a07ac70a77acdc5a60
-  
+  { path: 'formulario', component: FormularioComponent},
+  { path: 'revestimiento', component: RevestimientosComponent}
   ];
 
 @NgModule({

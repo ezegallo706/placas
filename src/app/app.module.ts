@@ -11,7 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CielorrasoDetalleComponent } from './cielo-rraso-detalle/cielo-rraso-detalle.component';
 import { FormsModule }    from '@angular/forms';
-import { CieloRrasoService} from './cielorraso.service'
+import { CieloRrasoService} from './cielorraso.service';
+import { FormularioComponent } from './formulario/formulario.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CieloRrasoService} from './cielorraso.service'
     ContactoComponent,
     RevestimientosComponent,
     FooterComponent,
-    CielorrasoDetalleComponent
+    CielorrasoDetalleComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
